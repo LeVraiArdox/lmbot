@@ -42,7 +42,7 @@ if client_id := cfg["client_id"]:
 
 intents = discord.Intents.default()
 intents.message_content = True
-activity = discord.CustomActivity(name=(cfg["status_message"] or "github.com/jakobdylanc/llmcord")[:128])
+activity = discord.CustomActivity(name=(cfg["status_message"] or "j'vais te démarrer Loic")[:128])
 discord_client = discord.Client(intents=intents, activity=activity)
 
 httpx_client = httpx.AsyncClient()

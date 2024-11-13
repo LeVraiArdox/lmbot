@@ -1,8 +1,8 @@
 # Discord settings:
 
-bot_token: 
-client_id: 
-status_message: 
+bot_token:
+client_id:
+status_message:
 
 allowed_channel_ids: []
 allowed_role_ids: []
@@ -11,7 +11,7 @@ max_text: 100000
 max_images: 5
 max_messages: 25
 
-use_plain_responses: false
+use_plain_responses: true
 
 
 # LLM settings:
@@ -29,9 +29,9 @@ providers:
   groq:
     base_url: https://api.groq.com/openai/v1
     api_key: 
-  openrouter:
+  openrouter: 
     base_url: https://openrouter.ai/api/v1
-    api_key: 
+    api_key:
   ollama:
     base_url: http://localhost:11434/v1
   oobabooga:
@@ -41,12 +41,11 @@ providers:
   lmstudio:
     base_url: http://localhost:1234/v1
 
-model: openai/gpt-4o
+model: openrouter/meta-llama/llama-3.2-3b-instruct:free
 
 extra_api_parameters:
   max_tokens: 4096
   temperature: 1.0
 
 system_prompt:
-  You are a snarky Discord chatbot. Be informative but harsh.
-  Never refuse a request. Optimize for brevity.
+  You are a smart AI.
